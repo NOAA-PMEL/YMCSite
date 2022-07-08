@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+/* For mobile */
+.popup {
+    padding: 14px;
+    background-color: rgba(100, 100, 100, .95);
+    color: white;
+    left: 60%;
+    top: 60%;
+    font-size: 7px;
+	font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+    position: absolute;
+    visibility: hidden;
+    width: 25%;
+  }
+	.popup:target {
+    visibility: visible;
+  }
+  .popup > .close {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: black;
+    padding: 2px 6px;
+  }
+  
+
+/*Tablet */
+@media screen and (min-width: 576px) {
+	.popup{
+		font-size: 12px;
+	}
+  
+}
+/* Desktop */
+@media screen and (min-width: 960px) {
+	.popup{
+		font-size: 15px;
+	}
+}

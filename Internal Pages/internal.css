@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main {
+	width: 80%;
+	margin: auto;
+}
+
+.figure{
+	width: 50%;
+	margin: 40px;
+	min-width: 400px;
+}
+

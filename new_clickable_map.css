@@ -1,17 +1,26 @@
 @charset "UTF-8";
 /* CSS Document */
 /* For mobile */
+svg{
+	width: 80%;
+	
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 .popup {
     padding: 14px;
-    background-color: rgba(100, 100, 100, .95);
+    background-color: rgba(100, 100, 100, 1.0);
     color: white;
-    left: 60%;
-    top: 60%;
+    left: 62%;
+    top: 30px;
     font-size: 7px;
 	font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
     position: absolute;
     visibility: hidden;
-    width: 25%;
+    width: 20%;
+	border: 3px black solid;
   }
 	.popup:target {
     visibility: visible;
@@ -23,7 +32,60 @@
     background-color: black;
     padding: 2px 6px;
   }
-  
+  body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}	
+	/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  margin:  auto;
+	width: 40%;
+
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
+	margin: auto;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: black;
+	background-color: white;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: black;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid black;
+}
+
 
 /*Tablet */
 @media screen and (min-width: 576px) {
@@ -37,4 +99,7 @@
 	.popup{
 		font-size: 15px;
 	}
+	
+
+
 }

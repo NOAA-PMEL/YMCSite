@@ -3,7 +3,7 @@
 /* For mobile */
 
 svg{
-	width: 90%;
+	width: 100%;
 	
 	display: block;
   margin-left: auto;
@@ -18,7 +18,7 @@ p{
     background-color: rgba(100, 100, 100, 1.0);
     color: white;
     left: 60%;
-    top: 110px;
+    top: 120px;
     font-size: 7px;
 	font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
     position: absolute;
